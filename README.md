@@ -1,3 +1,3 @@
 # TestApp
 
-![1](page 1.png) ![2](page 2.png) ![3](page 2 -2.png)
+![1](screenshots/page_1.png) ![2](screenshots/page_2.png) ![3](screenshots/page_2_2.png)
