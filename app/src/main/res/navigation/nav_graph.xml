@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/levels_fragment">
+
+    <fragment
+        android:id="@+id/levels_fragment"
+        android:name="com.example.testapp.ui.LevelsFragment"
+        android:label="Levels"
+        tools:layout="@layout/fragment_levels" >
+        <action
+            android:id="@+id/load_tasks_fragment"
+            app:destination="@id/tasks_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasks_fragment"
+        android:name="com.example.testapp.ui.LevelTasksFragment"
+        android:label="Level Tasks"
+        tools:layout="@layout/fragment_level_tasks">
+
+        <argument
+            android:name="levelId"
+            app:argType="integer"
+            android:defaultValue="0" />
+
+    </fragment>
+
+</navigation>
